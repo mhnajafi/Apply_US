@@ -248,11 +248,9 @@ service = gmail_authenticate()
 # Interest="Medical MEMS"
 
 
-Start=301
-End=305
+Start=1828
+End=1844
 
-while True:
-    pass
 
 
 for index in range(Start,End+1):
@@ -284,14 +282,14 @@ for index in range(Start,End+1):
 
     if Response:
         if Response=="Auto" or Response=="Not now":
-            Title="Inquiry about PhD opportunities under your supervision"
+            Title="Inquiry about PhD opportunities under your supervision for fall 2025"
         else:
             Title=0
     else:
         if Title:
             pass
         else:
-            Title="Inquiry about PhD opportunities under your supervision"
+            Title="Inquiry about PhD opportunities under your supervision for fall 2025"
 
 
     if Title:
