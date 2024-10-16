@@ -228,28 +228,13 @@ wb = openpyxl.load_workbook('DeadLine.xlsx')
 ws = wb.active
 ws = wb['6.0']
 
-Start=1
-End  =20
-# LastNames=      [ws.cell(row=i,column=5).value for i in range(Start+1,End+2)]
-# Departments=    [ws.cell(row=i,column=2).value for i in range(Start+1,End+2)]
-# Universities=   [ws.cell(row=i,column=3).value for i in range(Start+1,End+2)]
-# Interests=      [ws.cell(row=i,column=6).value for i in range(Start+1,End+2)]
-# Emails=      [ws.cell(row=i,column=6).value for i in range(Start+1,End+2)]
-
-
 # get the Gmail API service
 service = gmail_authenticate()
 
 
-# Email="mhnch75@gmail.com"
-# LastName="Najafi"
-# Department="Department of Electrical and Computer Engineering"
-# University="University of Harward"
-# Interest="Medical MEMS"
-
-
-Start=1828
-End=1844
+Start=501
+End=700
+delay=2
 
 
 
@@ -303,7 +288,7 @@ for index in range(Start,End+1):
             ws.cell(row=i,column=8).value=ttry
             wb.save("DeadLine.xlsx")
 
-            time.sleep(5)
+            time.sleep(delay)
             
             
         except:
