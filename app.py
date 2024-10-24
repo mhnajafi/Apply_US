@@ -232,8 +232,8 @@ ws = wb['6.0']
 service = gmail_authenticate()
 
 
-Start=1501
-End=1700
+Start=301
+End=600
 delay=2
 
 
